@@ -1,7 +1,7 @@
-FROM openjdk:8
+FROM eclipse-temurin:8-jdk
 
 EXPOSE 8081
 
-COPY target/wipflash.jar /wipflash.jar
+COPY target/crud_app-0.0.1-SNAPSHOT.jar /app.jar
 
-ENTRYPOINT ["java", "-jar", "/wipflash.jar"]
+ENTRYPOINT ["java", "-jar", "/app.jar"]
